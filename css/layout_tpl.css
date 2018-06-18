@@ -1,0 +1,212 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Плавні зміни властивостей лінків */
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+/* Зміни CSS коду розпочинати звідси */
+/*************************************/
+
+header .row {
+    min-height: 100vh;
+} 
+
+header {
+    background-image: url("../img1/bg1.jpg");
+}
+#s1{
+    background-image: url("../img1/bg2.jpg");
+    background-size: contain;
+    
+}
+#s2{
+     background-color: #FFDAB9;
+    background-size: contain;
+}
+#s3{
+    background-color: white;
+   
+}
+section {
+    min-height: 100vh;    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 50px 0;  /* Внітрішні відступи зверху та знизу у секціях <section> */
+}
+
+
+#s4{
+         background-color: #FFDAB9;
+background-size: contain;
+}
+
+h1{
+    font-size: 120px;
+    font-family: 'Fira Sans', serif;
+     
+    color: darkblue;
+     padding-top:  150px;
+     padding-left: 50px;
+   }
+
+h3{
+    color: darkblue;
+    font-weight:700;
+    padding-left: 50px;
+}
+
+
+h4 {
+    font-size: 40px;
+    color: darkblue;
+    padding-left: 50px;
+    
+    
+}
+
+
+h2{
+     font-size: 90px;
+   padding-top:  150px;
+    color: darkblue;
+    padding-left: 50px;
+    
+}
+p{
+    font-family: 'Spectral', serif;
+    font-size:17pt;
+color: darkblue;
+    padding-left: 50px;
+}
+
+.portfolio{
+     color: darkblue;
+    font-weight:700;
+    padding-left: 50px;
+}
+
+
+container{
+    background: url(../img1/bg1.jpg);
+    
+}
+
+#contact {
+  
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.main-form-wrap {
+  background: rgba(33, 37, 41, 0.6);
+  display: inline-block;
+  width: 100%;
+}
+.main-form-wrap h2 {
+  color: #FEC50D;
+}
+.main-form-wrap .contacts-item {
+  text-align: center;
+  margin: 40px 0;
+}
+.main-form-wrap .contacts-item .fa {
+  font-size: 44px;
+  color: #FEC50D;
+}
+
+.form input,
+.form textarea {
+  height: 40px;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  outline: none;
+  display: block;
+  margin: 30px auto;
+  padding-left: 5px;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.form input:focus,
+.form textarea:focus {
+  padding-left: 25px;
+}
+.form textarea {
+  height: 100px;
+}
+.form button {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+/*  background: ;*/
+  border: none;
+  padding: 10px 20px;
+  outline: none;
+}
+
+/*footer {
+  background: ;
+}*/
+
+.social {
+  width: 100%;
+  padding: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.social a {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 40px;
+      -ms-flex: 0 1 40px;
+          flex: 0 1 40px;
+  margin: 10px 40px;
+}
+.social a .fa {
+  font-size: 44px;
+}
+
+.year {
+  color: #fff;
+}
+
+/**************************************/
+/* Зміна властивостей для breakpoints */
+/**************************************/
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 15px;    /* Для Small додати відступи */
+        padding-right: 15px;   /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+
+    section {
+        padding: 25px 0;
+    }
+
+}
+
